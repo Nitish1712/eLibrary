@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body{margin-left:50px;}
+	input{size:30px;
+		height:25px;
+		width:30%;
+	}
+	input:focus {
+    transition: all 0.5s;
+	transform: scale(1.05);
+	background-color: #c4ffcb;
+	}
+    select{height:25px;width:30%;}
+	#i{
+	border:2px solid #456879;
+	border-radius:15px;
+	height: 30px;
+	width: 120px;} 
+	</style>
+	
+
+</head>
+<body style="background-color: #222222;color:white;" >
+	<p style="font-size:35px;"><b><u>Register</u></b></p>
+	<p style="font-size:20px;">It's for you and always will be.</p><br>
+	<form name="myform" method="post" action="register.jsp" target="_parent" >
+		<input type="text" placeholder="First Name" name="fname" title="Name can't be empty"   required /> &nbsp&nbsp 
+		<input type="text" placeholder="Last Name" name="lname" title="Name can't be empty"  required /><br><br>
+		<input type="email" name="email" placeholder="email address" title="e-mail must be valid" required /><br/><br>
+		<select name="branch" required>
+			<option>Computer Science</option>
+			<option>Information Technology</option>
+			<option>Mechanical</option>
+			<option>Civil</option>
+			<option>Electrical</option>
+			<option>Electronics and Comm.</option>
+			<option>Production and Ind.</option>
+		</select><br><br>
+		<input type="number" placeholder="Username (Roll No.)" title="Roll No must 8 have digits only" size="8"  name="uname"  required >&nbsp&nbsp
+		<input type="password" name="passcode" placeholder="Password" title="Password must have  length 8-15 " minlength="8" maxlength="15" autofocus required><br/><br>
+		<select name="semester" title="Semester" required >
+	
+			<option>1st</option>
+			<option>2nd</option>
+			<option>3rd</option>
+			<option>4th</option>
+			<option>5th</option>
+			<option>6th</option>
+			<option>7th</option>
+			<option>8th</option>
+		</select><br><br>
+		<input  type="submit" value="Register Now" style="color:red; font-weight:bold; font-size:15px;" />
+	</form>
+</body>
+</html>

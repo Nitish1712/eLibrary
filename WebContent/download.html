@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Downloads</title>
+	<script type="text/javascript">
+		function display(id){
+			var divi=document.getElementById(id);
+				divi.style.display='block';
+		}
+		function hide(id){
+			var divi=document.getElementById(id);
+				divi.style.display='none';
+		}
+
+	</script>
+</head>
+<style type="text/css">
+	body{
+		background-color: #222930;
+		color:#E9E9E9;
+	}
+	h1{
+		color: #4EB1BA;
+
+	}
+	th,td{
+		padding:10px;
+		text-align: center;
+	}
+	table,th,td{
+		border-radius: 15px;
+		border-color: white;
+	}
+	th{
+		color: #4EB1BA;
+	}
+	#table{
+		margin-top: 100px;
+	}
+	p{
+		font-size: 20px;
+	}
+	#details{
+		cursor: pointer;	
+	}
+	.details{
+		height: 150px;
+		width:430px;
+		display: none;
+		visibility: none;
+		position: fixed;
+		left: 28%;
+		top: 38%;
+		background-color: grey;
+		text-align: left;
+		border-radius: 6px;
+		padding-top: 60px;
+		padding-left: 170px;
+		line-height: 25px;
+		-webkit-animation: fadeIn 1s;
+    	animation: fadeIn 1s;
+    	color: black;
+	}
+
+	.close{
+		position: absolute;
+		padding: 0px,0px,0px,0px;
+		background-color: red;
+		color: white;
+		top: 4px;
+		right: 4px;
+		border-radius: 4px;
+	}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity:0 ;}
+}
+</style>
+<body>
+
+	<h1>Downloads</h1>
+	<hr>
+	<p>Library of NIT Kurukshetra also provide soft copies of various books for the sake of convenience of
+	its students.It aims to include every fruitful book in this list .This list is frequently updated </p>
+
+
+<div id="table">
+<table border="1px" align="center" width="95%">
+	<tr>
+	<th>SR.NO</th>
+	<th>TITLE</th>
+	<th>Details</th>
+	<th>DOWNLOAD</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>ENGINEERING MATHS I</td>
+		<td id="details" onClick="display('divmath1');">Details</td>
+		<td><a href="math.pdf">Download</a></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>ENGINEERING PHYSICS I</td>
+		<td id="details" onClick="display('divphy1');">Details</td>
+		<td><a href="phy.pdf">Download</a></td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>ENGINEERING CHEMISTRY I</td>
+		<td id="details" onClick="display('divchem1');">Details</td>
+		<td><a href="chem.pdf">Download</a></td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>ENGINEERING ECONOMICS</td>
+		<td id="details" onClick="display('diveco1');">Details</td>
+		<td><a href="eco.pdf">Download</a></td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>LET US C</td>
+		<td id="details" onClick="display('divc1');">Details</td>
+		<td><a href="c.pdf">Download</a></td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>COMMUNICATION SKILLS</td>
+		<td id="details" onClick="display('divcomm1');">Details</td>
+		<td><a href="comm.pdf">Download</a></td>
+	</tr>
+</table>
+</div>
+
+<div>
+<div class="details" id="divmath1">
+Name&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbspENGINEERING Mathematics I<br>Author&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbspParas Ram<br>Edition&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp2010<br>Useful for&nbsp:&nbsp&nbsp&nbspB.tech Sem I<br>	
+<button class="close" onClick="hide('divmath1')">x</button>
+</div>
+<div class="details" id="divphy1">
+Name&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbspENGINEERING PHYSICS I<br>Author&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbspS.P. Taneja<br>Edition&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp2008<br>Useful for&nbsp:&nbsp&nbsp&nbspB.tech Sem I<br>
+<button class="close" onClick="hide('divphy1')">x</button>
+</div>
+<div class="details" id="divchem1">
+Name&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbspENGINEERING CHEMISTRY I<br>Author&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbspJain & Jain<br>Edition&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp2007<br>Useful for&nbsp:&nbsp&nbsp&nbspB.tech Sem I<br>	
+<button class="close" onClick="hide('divchem1')">x</button>
+</div>
+<div class="details" id="diveco1">
+Name&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbspENGINEERING ECONOMICS<br>Author&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbspK.K. Dewett<br>Edition&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp2012<br>Useful for&nbsp:&nbsp&nbsp&nbspB.tech Students<br>	
+<button class="close" onClick="hide('diveco1')">x</button>
+</div>
+<div class="details" id="divc1" style="padding-left: 170px; width: 390px;">
+Name&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbspLET US C <br>Author&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbspYashwant Sinha<br>Edition&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp2008<br>Useful for&nbsp:&nbsp&nbsp&nbspB.tech Students<br>	
+<button class="close" onClick="hide('divc1')">x</button>
+</div>
+<div class="details" id="divcomm1">
+Name&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbspCOMMUNICATION SKILLS IN ENGLISH<br>Author&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbspA.Kumar<br>Edition&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp2009<br>Useful for&nbsp:&nbsp&nbsp&nbspall students<br>
+<button class="close" onClick="hide('divcomm1')">x</button>
+</div>
+
+
+</body>
+</html>

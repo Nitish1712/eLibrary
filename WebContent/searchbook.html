@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<style>
+input{background-color: #ABCABC;
+		font-weight:bold;
+		text-align: center; border: 2px solid #58427C;
+    color:crimson;font-size: 20px;}
+select{background-color: #ABCABC;
+		text-align: center; border: 2px solid #58427C;
+		font-weight:bold;
+    color:crimson;font-size: 20px;}
+		#i{
+		border:2px solid #456879;
+		border-radius:15px;
+		height: 40px;
+		font-size:15px;
+		color:red;
+		font-weight:bold;
+		
+		width: 170px;}
+	#i:hover {
+    transition: all 0.5s;
+	transform: scale(1.05);
+	color:yellow;
+	font-weight:yellow;
+	background-color: #0A7E8C;
+	}
+
+</style>
+</head>
+<body BGCOLOR="#222930">
+<form name="fbook" action="searchbook.jsp" method="post">
+<input type="text" name="bookname" />
+<select name="booksub">
+<option>Maths</option>
+<option>Chemistry</option>
+<option>Humanities</option>
+<option>Physics</option>
+<option>Any</option>
+</select>
+<input id="i" type="submit" value="Search">
+</form>
+</body>
+</html>
